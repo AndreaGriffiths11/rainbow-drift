@@ -11,6 +11,7 @@ A tiny browser drifting game featuring a Blender-authored unicorn kart rendered 
 - Drive with WASD or the arrow keys.
 - Hold a steering key above 35 km/h to drift and charge a boost.
 - Release steering to use the boost.
+- Rainbow edge rails slow and slide the kart back onto the track.
 - Press R to restart.
 - On a touch screen, use the four on-screen controls.
 
@@ -36,7 +37,13 @@ Extract the archive and open `index.html` to play.
 /Applications/Blender.app/Contents/MacOS/Blender -b --python create_asset.py
 (cd game && zip -9 -q ../rainbow-drift.zip index.html kart.js)
 unzip -t rainbow-drift.zip
+node test-guardrail.mjs
 ```
+
+## Releases
+
+- [v0.1.1](https://github.com/AndreaGriffiths11/rainbow-drift/releases/tag/v0.1.1) improves steering and adds forgiving track-edge recovery.
+- [Play the latest version](https://andreagriffiths11.github.io/rainbow-drift/game/).
 
 ## License
 
